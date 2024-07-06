@@ -11,7 +11,7 @@ SELECT * FROM [Portfolio project].[dbo].[Power_data];
 SELECT COUNT(*) AS row_count FROM [Portfolio project].[dbo].[Power_data];
 
 
--- summ of missing vlaues for some columns
+-- sum of missing values for some columns
 
 SELECT 
     SUM(CASE WHEN [Avg temperature] IS NULL THEN 1 ELSE 0 END) AS missing_temperature,
